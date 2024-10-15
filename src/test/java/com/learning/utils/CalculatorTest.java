@@ -23,4 +23,8 @@ public class CalculatorTest {
     public void addAnyNumsReturnSum(){
         assertEquals(6,Calculator.add("1,2,3"));
     }
+    @Test
+    public void addNumsWithNewlines(){
+        assertEquals(9, Calculator.add("1,4\n4"));
+    }
 }

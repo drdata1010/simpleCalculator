@@ -7,9 +7,10 @@ public class Calculator {
         if(!input.contains(",")){
             return Integer.parseInt(input);
         } else {
-            String[] nums = input.split(",");
+            String[] nums = input.split(",|\n");
             int sum = 0;
             for(String num : nums){
+//                num = num.trim();
                 sum += Integer.parseInt(num);
             }
             return sum;
