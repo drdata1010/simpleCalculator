@@ -19,4 +19,8 @@ public class CalculatorTest {
     public void addTwoNumsReturnSum(){
         assertEquals(3, Calculator.add("1,2"));
     }
+    @Test
+    public void addAnyNumsReturnSum(){
+        assertEquals(6,Calculator.add("1,2,3"));
+    }
 }
