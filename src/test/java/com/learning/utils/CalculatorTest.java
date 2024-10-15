@@ -11,4 +11,8 @@ public class CalculatorTest {
     public void checkEmptyReturn0(){
         assertEquals(0, add(""));
     }
+    @Test
+    public void singleNumDontAdd(){
+        assertEquals(1,Calculator.add("1"));
+    }
 }
