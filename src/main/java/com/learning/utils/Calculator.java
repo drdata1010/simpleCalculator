@@ -2,6 +2,7 @@ package com.learning.utils;
 
 public class Calculator {
     public static int add(String input){
-        return -2;
+        if(input.equals("")) return 0;
+        return 1;
     }
 }
