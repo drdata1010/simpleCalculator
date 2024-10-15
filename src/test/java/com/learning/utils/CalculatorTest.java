@@ -27,4 +27,8 @@ public class CalculatorTest {
     public void addNumsWithNewlines(){
         assertEquals(9, Calculator.add("1,4\n4"));
     }
+    @Test
+    public void addNumsWithNewDelim(){
+        assertEquals(3, Calculator.add("//;\\n1;2"));
+    }
 }
