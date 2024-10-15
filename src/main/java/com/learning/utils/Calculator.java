@@ -8,7 +8,11 @@ public class Calculator {
             return Integer.parseInt(input);
         } else {
             String[] nums = input.split(",");
-            return Integer.parseInt(nums[0]) + Integer.parseInt(nums[1]);
+            int sum = 0;
+            for(String num : nums){
+                sum += Integer.parseInt(num);
+            }
+            return sum;
         }
     }
 }
