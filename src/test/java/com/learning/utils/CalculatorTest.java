@@ -15,4 +15,8 @@ public class CalculatorTest {
     public void singleNumDontAdd(){
         assertEquals(28,Calculator.add("28"));
     }
+    @Test
+    public void addTwoNumsReturnSum(){
+        assertEquals(3, Calculator.add("1,2"));
+    }
 }
