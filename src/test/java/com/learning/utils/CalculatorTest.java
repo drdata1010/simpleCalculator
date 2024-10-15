@@ -13,6 +13,6 @@ public class CalculatorTest {
     }
     @Test
     public void singleNumDontAdd(){
-        assertEquals(1,Calculator.add("1"));
+        assertEquals(28,Calculator.add("28"));
     }
 }
