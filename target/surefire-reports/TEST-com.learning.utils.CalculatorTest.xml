@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.learning.utils.CalculatorTest" time="0.018" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.learning.utils.CalculatorTest" time="0.025" tests="6" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Applications/Springboot_Microservices/simpleCalculator/target/surefire/surefirebooter17095001977435637609.jar /Applications/Springboot_Microservices/simpleCalculator/target/surefire 2024-10-16T01-13-49_190-jvmRun1 surefire6447135356561895655tmp surefire_06578323938166937049tmp"/>
+    <property name="sun.java.command" value="/Applications/Springboot_Microservices/simpleCalculator/target/surefire/surefirebooter11970096078884936089.jar /Applications/Springboot_Microservices/simpleCalculator/target/surefire 2024-10-16T01-18-38_030-jvmRun1 surefire7799817263858979287tmp surefire_06647234891263540159tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Applications/Springboot_Microservices/simpleCalculator/target/test-classes:/Applications/Springboot_Microservices/simpleCalculator/target/classes:/Users/souravyadav/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/souravyadav/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/souravyadav/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/souravyadav/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/souravyadav/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/souravyadav/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Applications/Springboot_Microservices/simpleCalculator/target/surefire/surefirebooter17095001977435637609.jar"/>
+    <property name="surefire.real.class.path" value="/Applications/Springboot_Microservices/simpleCalculator/target/surefire/surefirebooter11970096078884936089.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.10+7-LTS"/>
@@ -56,9 +56,14 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="addTwoNumsReturnSum" classname="com.learning.utils.CalculatorTest" time="0.012"/>
+  <testcase name="addTwoNumsReturnSum" classname="com.learning.utils.CalculatorTest" time="0.013"/>
   <testcase name="checkEmptyReturn0" classname="com.learning.utils.CalculatorTest" time="0"/>
-  <testcase name="addNumsWithNewlines" classname="com.learning.utils.CalculatorTest" time="0.001"/>
-  <testcase name="singleNumDontAdd" classname="com.learning.utils.CalculatorTest" time="0.001"/>
+  <testcase name="addNumsWithNewDelim" classname="com.learning.utils.CalculatorTest" time="0.006">
+    <error message="For input string: &quot;//;\n1;2&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: "//;\n1;2"
+	at com.learning.utils.CalculatorTest.addNumsWithNewDelim(CalculatorTest.java:32)
+</error>
+  </testcase>
+  <testcase name="addNumsWithNewlines" classname="com.learning.utils.CalculatorTest" time="0"/>
+  <testcase name="singleNumDontAdd" classname="com.learning.utils.CalculatorTest" time="0"/>
   <testcase name="addAnyNumsReturnSum" classname="com.learning.utils.CalculatorTest" time="0"/>
 </testsuite>
