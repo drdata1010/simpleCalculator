@@ -43,4 +43,8 @@ public class CalculatorTest {
     public void notAddGreaterNums(){
         assertEquals(2,Calculator.add("1002,2"));
     }
+    @Test
+    public void acceptNLengthDelim(){
+        assertEquals(6,Calculator.add("//***\\n1***2***3"));
+    }
 }

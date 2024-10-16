@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.learning.utils.CalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.learning.utils.CalculatorTest
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! - in com.learning.utils.CalculatorTest
+acceptNLengthDelim  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "//***\n1***2***3"
+	at com.learning.utils.CalculatorTest.acceptNLengthDelim(CalculatorTest.java:48)
+
