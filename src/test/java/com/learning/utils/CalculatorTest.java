@@ -39,4 +39,8 @@ public class CalculatorTest {
         });
         assertEquals("Negative numbers not allowed: -2,-3", exception.getMessage());
     }
+    @Test
+    public void notAddGreaterNums(){
+        assertEquals(2,Calculator.add("1002,2"));
+    }
 }

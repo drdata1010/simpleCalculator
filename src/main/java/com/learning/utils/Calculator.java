@@ -41,11 +41,7 @@ public class Calculator {
         System.out.println(Calculator.add("1,2,3"));      // Output: 6
         System.out.println(Calculator.add(""));           // Output: 0
         System.out.println(Calculator.add("//:\n4:5"));   // Output: 9
-        System.out.println(Calculator.add("1"));           // Output: 1
+        System.out.println(Calculator.add("1002,2"));           // Output: 2
 
-    }
-
-    private static int toInt(String input) throws NumberFormatException {
-        return Integer.parseInt(input);
     }
 }
