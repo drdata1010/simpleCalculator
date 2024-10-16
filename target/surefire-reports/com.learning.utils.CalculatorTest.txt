@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.learning.utils.CalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! - in com.learning.utils.CalculatorTest
-addNumsWithNewDelim  Time elapsed: 0.006 s  <<< ERROR!
-java.lang.NumberFormatException: For input string: "//;\n1;2"
-	at com.learning.utils.CalculatorTest.addNumsWithNewDelim(CalculatorTest.java:32)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.learning.utils.CalculatorTest
