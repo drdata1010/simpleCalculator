@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.learning.utils.Calculator.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalculatorTest {
 
@@ -30,5 +31,12 @@ public class CalculatorTest {
     @Test
     public void addNumsWithNewDelim(){
         assertEquals(3, Calculator.add("//;\n1;2"));
+    }
+    @Test
+    public void notAddNegativeNumbers(){
+        Exception exception = assertThrows(IllegalArgumentException.class, ()->{
+            Calculator.add("1,-2,-3");
+        });
+        assertEquals("Negative numbers not allowed: -2,-3", exception.getMessage());
     }
 }
