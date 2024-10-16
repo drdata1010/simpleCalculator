@@ -26,6 +26,9 @@ public class Calculator {
                 if(number < 0) {
                     negativeNums.add(num);
                 } else {
+                    if(number > 1000){
+                        number = 0;
+                    }
                     sum += number;
                 }
             }
